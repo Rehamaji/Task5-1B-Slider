@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+<div class="d-flex">
+    <button class="border pointer" onclick="nextPrev('prev')">
+        <i class="fa-solid fa-circle-chevron-left fa-2xl"></i>
+    </button>
+    <img src="./assets/img/one.jpg" alt="" class="img">
+    <img src="./assets/img/two.jpg" alt="" class="img active">
+    <img src="./assets/img/three.jpg" alt="" class="img">
+    <img src="./assets/img/four.jpg" alt="" class="img">
+
+    <button class="border pointer" onclick="nextPrev('next')">
+        <i class="fa-solid fa-circle-chevron-right fa-2xl "></i>
+    </button>
+</div>
+<div class="d-flex">
+    <button onclick="indicator(0)" class="cycle pointer"></button>
+    <button onclick="indicator(1)" class="cycle pointer light"></button>
+    <button onclick="indicator(2)" class="cycle pointer"></button>
+    <button onclick="indicator(3)" class="cycle pointer"></button>
+</div>
+<script src="./assets/script.js"></script>
+</body>
+</html>
